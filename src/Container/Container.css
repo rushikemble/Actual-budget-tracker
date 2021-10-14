@@ -1,0 +1,52 @@
+.container_div {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f4f5f6;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  .container_div {
+    height: auto;
+  }
+}
+
+.container_div .grid_container {
+  width: 95vw;
+  height: 90vh;
+  margin-top: 10px;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-gap: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container_div .grid_container {
+    height: auto;
+    -ms-grid-rows: 0.8fr 2fr 1.2fr;
+        grid-template-rows: 0.8fr 2fr 1.2fr;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .container_div .grid_container {
+    -ms-grid-rows: 0.8fr 1.5fr 1.2fr;
+        grid-template-rows: 0.8fr 1.5fr 1.2fr;
+  }
+}
+/*# sourceMappingURL=Container.css.map */

@@ -1,0 +1,317 @@
+@font-face {
+  font-family: "ocr extended";
+  src: url(../OCR\ A\ Extended\ Regular.ttf);
+}
+@font-face {
+  font-family: "aeonik light";
+  src: url(../Aeonik-Light.otf);
+}
+.home_container {
+  width: 100vw;
+  padding-bottom: 5vh;
+  background-color: #50e3c2;
+  background-image: radial-gradient(
+      at 47% 33%,
+      hsl(162, 77%, 40%) 0,
+      transparent 59%
+    ),
+    radial-gradient(at 82% 65%, hsl(198, 100%, 50%) 0, transparent 55%);
+}
+
+.middle_home_container {
+  height: 89vh;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+.home-body-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-body-wrapper {
+  overflow: hidden;
+}
+.heading_wrapper {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 6rem;
+}
+.heading_wrapper > h1 {
+  font-size: 4vw;
+  color: black;
+  width: 60%;
+  font-family: "aeonik light";
+}
+
+.heading_wrapper > h4 {
+  font-size: 1vw;
+  color: black;
+  font-family: "aeonik light";
+  margin-bottom: 10px;
+}
+.heading_button_wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 1.5rem 0;
+}
+.heading_button_wrapper > button {
+  padding: 14px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  font-size: 18px;
+  background: transparent;
+  border: 0.5px solid black;
+  transform: rotate(-20deg);
+  transition: transform 0.7s ease-in-out;
+}
+.heading_button_wrapper > button > a > .MuiSvgIcon-root {
+  transform: rotate(130deg);
+  font-size: 18px;
+}
+.heading_button_wrapper > button:hover {
+  transform: translatez(10px);
+}
+
+.card_wrapper {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  background: transparent;
+}
+.card {
+  width: 506px;
+  height: 319px;
+  position: absolute;
+  z-index: 1;
+  border-radius: 30px;
+  transform: rotate(-20deg);
+  background: transparent;
+}
+.card_holder_Wrapper {
+  position: relative;
+  border-radius: 30px;
+  width: 506px;
+  height: 319px;
+  backdrop-filter: blur(5px);
+  background-color: rgba(225, 225, 225, 0.4);
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+  border: 2px rgba(255, 255, 255, 0.4) solid;
+  border-bottom: 2px rgba(40, 40, 40, 0.35) solid;
+  border-right: 2px rgba(40, 40, 40, 0.35) solid;
+}
+
+.card2 {
+  width: 506px;
+  height: 319px;
+  right: -10px;
+  position: absolute;
+  z-index: 2;
+  border-radius: 30px;
+  transform: rotate(10deg);
+  background: transparent;
+}
+.card_holder_Wrapper2 {
+  position: relative;
+  border-radius: 30px;
+  width: 506px;
+  height: 319px;
+  backdrop-filter: blur(5px);
+  background-color: rgba(225, 225, 225, 0.4);
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+  border: 2px rgba(255, 255, 255, 0.4) solid;
+  border-bottom: 2px rgba(40, 40, 40, 0.35) solid;
+  border-right: 2px rgba(40, 40, 40, 0.35) solid;
+}
+
+.bank {
+  color: #ffffff;
+  font-size: 28px;
+  font-family: "Mulish", sans-serif;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.chip {
+  width: 50px;
+  position: absolute;
+  top: 100px;
+  left: 40px;
+}
+
+.indicator {
+  width: 50px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+.number {
+  color: #ffffff;
+  font-size: 36px;
+  font-family: "ocr extended";
+  font-weight: 400;
+  position: absolute;
+  bottom: 100px;
+  left: 30px;
+}
+
+.card-holder {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: cursive;
+  font-weight: 700;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  text-transform: uppercase;
+}
+
+.card-holder span {
+  font-size: 10px;
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+}
+
+.valid {
+  color: #ffffff;
+  font-size: 18px;
+  font-family: "ocr extended";
+  font-weight: 400;
+  position: absolute;
+  bottom: 30px;
+  left: 220px;
+  text-transform: uppercase;
+}
+
+.valid span {
+  font-size: 10px;
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+}
+
+.logo {
+  width: 70px;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .card_wrapper {
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .card_wrapper {
+    width: 100%;
+    height: 70%;
+    align-items: flex-start;
+  }
+  .heading_wrapper {
+    width: 100%;
+    height: 40%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 16px 3rem;
+  }
+  .heading_wrapper > h1 {
+    font-size: 6vw;
+    width: 70%;
+  }
+  .heading_wrapper > h4 {
+    width: 70%;
+    font-size: 2vw;
+  }
+  .middle_home_container {
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 10vh;
+  }
+  .card2 {
+    width: 325px;
+    height: 219px;
+    right: -10px;
+  }
+  .card {
+    width: 325px;
+    height: 219px;
+    right: -10px;
+  }
+  .card_holder_Wrapper2 {
+    width: 325px;
+    height: 219px;
+  }
+  .card_holder_Wrapper {
+    width: 325px;
+    height: 219px;
+  }
+  .bank {
+    font-size: 14px;
+    top: 16px;
+  }
+  .chip {
+    width: 25px;
+    left: 40px;
+    top: 89px;
+  }
+  .indicator {
+    width: 25px;
+    top: 89px;
+    left: 100px;
+  }
+  .number {
+    font-size: 18px;
+    bottom: 73px;
+    left: 30px;
+  }
+  .card-holder {
+    font-size: 8px;
+    bottom: 30px;
+    left: 30px;
+  }
+  .valid {
+    font-size: 8px;
+    bottom: 30px;
+    left: 146px;
+  }
+  .logo {
+    width: 39px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .heading_wrapper > h4 {
+    width: 75%;
+    font-size: 3vw;
+  }
+  .heading_wrapper > h1 {
+    font-size: 8vw;
+    width: 75%;
+  }
+}
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}

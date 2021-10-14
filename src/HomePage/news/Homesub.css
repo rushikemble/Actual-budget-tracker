@@ -1,0 +1,69 @@
+.subscription-wrapper {
+  width: 95vw;
+  background-color: white;
+  padding: 5vh 0;
+  position: relative;
+}
+
+.subscription-container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  z-index: 1;
+}
+.circle > img {
+  position: absolute;
+  display: block;
+  top: -150px;
+  right: -350px;
+  background-repeat: no-repeat;
+  width: 700px;
+  height: 750px;
+  background-size: contain;
+  background-position: 100%;
+  z-index: 0;
+}
+.subscription-row {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.subscription-form-container {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 35px 0;
+}
+.subscription-form-container > form > input {
+  border-radius: 30px;
+  box-shadow: 0 10px 24px 0 hsl(210deg 8% 54% / 16%);
+  border: 1px solid transparent;
+  padding: 17px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #6c767f;
+  transition: box-shadow 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  margin-bottom: 15px;
+}
+.subscription-form-container > form > button {
+  display: block;
+  min-width: 182px;
+  width: 182px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgb(18 196 139 / 32%);
+  background-color: #50e3c2;
+  padding: 19px 25px;
+  line-height: 1.375em;
+  color: #fff;
+  text-align: center;
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+}

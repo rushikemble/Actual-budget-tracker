@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "Aeonik-medium";
+  src: url(../Aeonik-Medium.otf);
+}
+@font-face {
+  font-family: "Aeonik-light";
+  src: url(../Aeonik-Light.otf);
+}
+.secondList_container {
+  grid-row: span 3;
+  grid-column: span 1 / 4;
+  width: 100%;
+  height: 100%;
+  font-family: "Aeonik-medium";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media only screen and (max-width: 768px) {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
+
+  .speekText_wrapper {
+    height: 10%;
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Aeonik-light";
+    padding: 15px;
+    border-radius: 16px;
+    backdrop-filter: blur(1px);
+    background-color: #e3fee8;
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 2px rgba(255, 255, 255, 0.4) solid;
+    border-bottom: 2px rgba(40, 40, 40, 0.35) solid;
+    border-right: 2px rgba(40, 40, 40, 0.35) solid;
+    @media only screen and (max-width: 768px) {
+      width: 85%;
+      margin-bottom: 15px;
+    }
+  }
+  .pnl_wrapper {
+    height: 35%;
+    width: 100%;
+    margin-bottom: 10px;
+    @media only screen and (max-width: 768px) {
+      height: 33%;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .pnl_btn_wrapper {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+    }
+    .pnl_btn_wrapper > h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .details_Component_wrapper {
+      width: 70%;
+      height: 75%;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  .category_list_wrapper {
+    height: 55%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media only screen and (max-width: 768px) {
+      height: auto;
+    }
+    .category-stats-container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .category-select-form {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 30px;
+      select {
+        padding: 8px 12px;
+        border: none;
+        background-color: transparent;
+      }
+    }
+    .category-stats-donut-container {
+      width: 60%;
+      @media only screen and (max-width: 1440px) and (min-width: 768px) {
+        width: 70%;
+      }
+      @media only screen and (max-width: 768px) {
+        width: 60%;
+      }
+      @media only screen and (max-width: 490px) {
+        width: 85%;
+      }
+      @media only screen and (max-width: 320px) {
+        width: 95%;
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+.fetures-container {
+  position: relative;
+  text-align: center;
+  background-color: white;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  width: 95vw;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.features-bg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+.features-content-container {
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.content-heading {
+  margin-bottom: 25px;
+  font-size: 2.5vw;
+  font-family: "aeonik light";
+}
+.content-subHeading {
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-family: "aeonik light";
+  font-weight: 300;
+}
+.features-content-wrapper {
+  width: 90%;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.features-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 80px 20px;
+  width: 20%;
+  position: relative;
+  border-radius: 20px;
+  perspective: 1200px;
+  transform: perspective(1200px);
+  background-color: #f7f7f7;
+}
+
+.features-card-heading {
+  width: 80%;
+  text-transform: uppercase;
+  font-family: "aeonik light";
+  font-size: 1vw;
+}
+.features-card-container > img {
+  width: 70px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .fetures-container {
+    padding: 0;
+  }
+  .features-content-wrapper {
+    width: 95%;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+  }
+  .features-card-container {
+    margin-bottom: 25px;
+    width: 45%;
+    height: 240px;
+  }
+  .features-card-heading {
+    font-size: 2.2vw;
+  }
+  .content-heading {
+    font-size: 5vw;
+  }
+}
+@media screen and (max-width: 430px) {
+  .content-subHeading {
+    font-size: 3vw;
+  }
+  .content-heading {
+    font-size: 6vw;
+  }
+  .features-card-container {
+    width: 55%;
+  }
+  .features-card-heading {
+    font-size: 3.2vw;
+  }
+  .content-heading {
+    font-size: 6vw;
+  }
+}

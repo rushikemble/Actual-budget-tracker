@@ -1,0 +1,102 @@
+.list_container {
+  grid-row: span 2 / auto;
+  grid-column: span 2 / auto;
+  border-radius: 16px;
+  overflow: auto;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .list_container {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
+}
+
+.list_container .heading_wrapper {
+  height: auto;
+  width: 100%;
+  padding: 10px 16px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(66, 66, 66, 0.745);
+}
+
+@media only screen and (max-width: 768px) {
+  .list_container .heading_wrapper {
+    height: auto;
+  }
+}
+
+.list_container .heading_wrapper h1 {
+  font-size: 1.2vw;
+  margin-bottom: 5px;
+  color: #525151;
+}
+
+@media only screen and (max-width: 768px) {
+  .list_container .heading_wrapper h1 {
+    font-size: 3.5vw;
+  }
+}
+
+.list_container .heading_wrapper h3 {
+  font-size: 2.2vw;
+}
+
+@media only screen and (max-width: 768px) {
+  .list_container .heading_wrapper h3 {
+    font-size: 4.5vw;
+  }
+}
+
+.list_container .list_wrapper {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.list_container .list_wrapper .MuiListItem-container {
+  margin-bottom: 10px;
+  border-radius: 16px;
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+          box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+  border: 2px rgba(255, 255, 255, 0.4) solid;
+  border-bottom: 2px rgba(40, 40, 40, 0.35) solid;
+  border-right: 2px rgba(40, 40, 40, 0.35) solid;
+}
+
+@media only screen and (max-width: 768px) {
+  .list_container .list_wrapper {
+    overflow: auto;
+    height: 55vh;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .list_container .list_wrapper {
+    overflow: auto;
+    height: 62vh;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  border-radius: 10px;
+}
+
+.list_container::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.459);
+  height: 3px;
+}
+
+.list_container::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+/*# sourceMappingURL=List.css.map */

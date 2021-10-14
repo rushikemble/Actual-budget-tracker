@@ -1,0 +1,30 @@
+.container_div {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #f4f5f6;
+  overflow: hidden;
+  @media only screen and (max-width: 768px) {
+    height: auto;
+  }
+  .grid_container {
+    width: 95vw;
+    height: 90vh;
+    margin-top: 10px;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-gap: 16px;
+    @media only screen and (max-width: 768px) {
+      height: auto;
+
+      grid-template-rows: 0.8fr 2fr 1.2fr;
+    }
+    @media only screen and (max-width: 490px) {
+      grid-template-rows: 0.8fr 1.5fr 1.2fr;
+    }
+  }
+}

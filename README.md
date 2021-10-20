@@ -1,4 +1,4 @@
-#Actual 
+# Actual 
 Actual helps you to get your finances into the shape so that you don't need to stress about every dollar that you spend. You can add or delete your expenses and investments and you can get a quick overview about your total incomes and expenses at a glance and in one place.
 
 Get more information about Actual - https://actual-budget-tracker.readme.io/docs 
